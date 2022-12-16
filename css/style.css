@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+
+*, html, body{
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+}
 
 .tabled{
   width: 70%;
@@ -5,7 +11,7 @@
 
 .table-ujian-main td {
     max-width: 300px;
-    offset:;
+    /* offset:; */
 }
 
 
@@ -313,7 +319,7 @@ top: -30px;
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
   cursor: default;
-  color: #57B98A; !important;
+  color: #57B98A !important;
   border: 1px solid transparent;
   background: transparent;
   box-shadow: none;

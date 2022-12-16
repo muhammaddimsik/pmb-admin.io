@@ -1,96 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+
+*, html, body{
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
 }
 body {
-  background-color: lightgray;
+  background-color: #f4f4f4;
   border-radius: 5px;
   font-family: "IBM Plex Mono";
 }
 .sidebar-nav {
   height: 1024px;
-  width: 250px;
+  width: 270px;
   left: 0px;
   top: 0px;
   border-radius: 5px;
   position: fixed;
-  right: 0%;
-  bottom: 0%;
   background-color: #ffffff;
   box-shadow: #313131;
 }
+.sidebar-nav .header .list-item .flex{
+  display: flex;
+  align-items: center;
+  margin: 40px 0 0 30px;
+  gap: 6px;
+}
 .sidebar-nav .description-header {
-  position: absolute;
-  left: 35.09%;
-  right: 7.37%;
-  top: 4.49%;
-  bottom: 90.43%;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 26px;
+  font-weight: 800;
+  font-size: 17px;
   text-transform: uppercase;
   color: #313131;
+  display: flex;
+  flex-direction: column;
 }
 .sidebar-nav .header .list-item .icon {
-  width: 60px;
-  height: 60px;
-  height: 60px;
-  width: 60px;
-  margin-left: 25px;
-  margin-top: 42px;
-  border-radius: 0px;
+  width: 50px;
+  height: 50px;
 }
 .sidebar-main {
-  margin-top: 70px;
-  margin-left: 45px;
+  padding-left: 54px;
+}
+
+.sidebar-nav .header{
+  margin-bottom: 40px;
 }
 .sidebar-main .list-item {
-  padding-top: 40px 10px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  margin-top: 30px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-nav .sidebar-main .list-item .rectangle{
+  width: 6px;
   height: 40px;
-  width: 225px;
+  background-color: #69FF8A;
+  border-radius: 20px;
+}
+
+.sidebar-nav .sidebar-main .list-item .flex{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 40px;
 }
 .sidebar-nav .sidebar-main .list-item .icon {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
 }
 .sidebar-nav .sidebar-main .list-item .description {
-  position: absolute;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 26px;
-  margin-left: 26px;
-  margin-top: 0px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
 }
+
+/* #dashboard, #data_camaba, */
+
 #ujian {
   background: linear-gradient(
     270deg,
     rgba(105, 255, 138, 0.6) -5.08%,
     rgba(255, 255, 255, 0.6) 103.05%
   );
-  width: 206px;
-  height: 40px;
-  position: relative;
-  top: 0px;
-  border-radius: 0px;
 }
 #Dashboard {
-  background: linear-gradient(
-    270deg,
-    rgba(105, 255, 138, 0.6) -5.08%,
-    rgba(255, 255, 255, 0.6) 103.05%
-  );
-  width: 206px;
-  height: 40px;
-  position: relative;
-  top: 0px;
-  border-radius: 0px;
+  background: linear-gradient(270deg, rgba(105, 255, 138, 0.4) -5.08%, rgba(255, 255, 255, 0.6) 103.05%);
 }
 #Data-camaba {
   background: linear-gradient(
@@ -98,11 +98,6 @@ body {
     rgba(105, 255, 138, 0.6) -5.08%,
     rgba(255, 255, 255, 0.6) 103.05%
   );
-  width: 206px;
-  height: 40px;
-  position: relative;
-  top: 0px;
-  border-radius: 0px;
 }
 #pm {
   background: linear-gradient(
@@ -110,11 +105,6 @@ body {
     rgba(105, 255, 138, 0.6) -5.08%,
     rgba(255, 255, 255, 0.6) 103.05%
   );
-  width: 206px;
-  height: 40px;
-  position: relative;
-  top: 0px;
-  border-radius: 0px;
 }
 
 #Laporan {
@@ -123,11 +113,6 @@ body {
     rgba(105, 255, 138, 0.6) -5.08%,
     rgba(255, 255, 255, 0.6) 103.05%
   );
-  width: 206px;
-  height: 40px;
-  position: relative;
-  top: 0px;
-  border-radius: 0px;
 }
 /*
 .sidebar-nav .sidebar-main .list-item:hover {
@@ -142,6 +127,8 @@ body {
   border-radius: 20px 0px 0px 20px;
   box-sizing: border-box;
 }*/
+
+
 a {
   text-decoration: none;
   color: #313131;
@@ -149,7 +136,7 @@ a {
 
 .line-top {
   position: absolute;
-  margin-top: 57px;
+  margin-top: 17px;
   margin-left: 1015px;
 }
 

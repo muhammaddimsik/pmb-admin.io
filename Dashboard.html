@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/sty.css" />
-    <link rel="stylesheet" href="css/style.css">
-        <script
+    <link rel="stylesheet" href="css/style.css" />
+    <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
-     <script src="js/dashboard2.js"></script>
-      <script src="js/Chart.min.js"></script>
-
-    
+    <script src="js/dashboard2.js"></script>
+    <script src="js/Chart.min.js"></script>
 
     <style></style>
   </head>
@@ -23,116 +21,121 @@
     <div class="sidebar-nav">
       <div class="header">
         <div class="list-item">
-          <a href="Dashboard.html">
+          <a href="Dashboard.html" class="flex">
             <img src="img/logo.png" alt="" class="icon" />
-            <span class="description-header">Admin PMB ITS NU Pekalongan</span>
+            <h3 class="description-header">
+              Admin PMB <span> ITSNU Pekalongan</span>
+            </h3>
           </a>
         </div>
       </div>
       <div class="sidebar-main">
         <div class="list-item" id="Dashboard">
-          <a href="Dashboard.html">
-            <img src="img/das.png" alt="" class="icon"/>
-            <span class="description">Dashboard</span>
+          <a href="Dashboard.html" class="flex">
+            <img src="img/das.png" alt="" class="icon" />
+            <p class="description">Dashboard</p>
           </a>
+          <div class="rectangle"></div>
         </div>
         <div class="list-item">
-          <a href="Data_Camaba.html">
+          <a href="Data_Camaba.html" class="flex">
             <img src="img/pople.png" alt="" class="icon" />
-            <span class="description">Data Camaba</span>
+            <p class="description">Data Camaba</p>
           </a>
         </div>
         <div class="list-item">
-          <a href="Ujian_Onine.html">
+          <a href="Ujian_Onine.html" class="flex">
             <img src="img/book.png" alt="" class="icon" />
-            <span class="description">Ujian Online</span>
+            <p class="description">Ujian Online</p>
           </a>
         </div>
         <div class="list-item">
-          <a href="Pemeringkatan.html">
+          <a href="Pemeringkatan.html" class="flex">
             <img src="img/ujuan.png" alt="" class="icon" />
-            <span class="description">Pemeringkatan</span>
+            <p class="description">Pemeringkatan</p>
           </a>
         </div>
         <div class="list-item">
-          <a href="Laporan.html">
+          <a href="Laporan.html" class="flex">
             <img src="img/down.png" alt="" class="icon" />
-            <span class="description">Laporan</span>
+            <p class="description">Laporan</p>
           </a>
         </div>
         <div class="list-item">
-          <a href="#">
+          <a href="#" class="flex">
             <img src="img/exit.png" alt="" class="icon" />
-            <span class="description">Keluar</span>
+            <p class="description">Keluar</p>
           </a>
         </div>
       </div>
+    </div>
+    <div class="line-top">
+      <div class="list-item">
+        <img src="img/search.png" class="icon" alt="" />
+        <input type="search" class="filter" />
+        <button class="icon2" type="button">
+          <img src="img/alert.png" alt="" />
+        </button>
       </div>
-      <div class="line-top">
-        <div class="list-item">
-          <img src="img/search.png" class="icon" alt="" />
-          <input type="search" class="filter" />
-          <button class="icon2" type="button">
-            <img src="img/alert.png" alt="" />
-          </button>
-        </div>
-      </div>
+    </div>
 
-      <div class="container">
-        <div class="header">
-          <div class="item">
-            <span class="description-item">Dashboard</span>
-          </div>
+    <div class="container">
+      <div class="header">
+        <div class="item">
+          <span class="description-item">Dashboard</span>
         </div>
       </div>
+    </div>
     <div class="container-main">
       <div class="main-container">
         <div class="conten">
-            <a href="#">
-                <img src="img/pople.png" class="icon" alt="">
-                <p class="item">345</p>
-                <span class="description">Total Camaba</span>
-            </a>
+          <a href="#">
+            <img src="img/pople.png" class="icon" alt="" />
+            <p class="item">345</p>
+            <span class="description">Total Camaba</span>
+          </a>
         </div>
         <div class="conten">
-            <a href="#">
-                <img src="img/ujuan.png" class="icon" alt="">
-                <p class="item">350</p>
-                <span class="description1">Camaba Telah melakukan pembayaran</span>
-            </a>
+          <a href="#">
+            <img src="img/ujuan.png" class="icon" alt="" />
+            <p class="item">350</p>
+            <span class="description1">Camaba Telah melakukan pembayaran</span>
+          </a>
         </div>
         <div class="conten">
-             <a href="#">
-                <img src="img/Icon.png" width="20.5px" class="icon" alt="">
-                <p class="item">351</p>
-                <span class="description2">Camaba Telah melakukan Ujian Online</span>
-            </a>
+          <a href="#">
+            <img src="img/Icon.png" width="20.5px" class="icon" alt="" />
+            <p class="item">351</p>
+            <span class="description2"
+              >Camaba Telah melakukan Ujian Online</span
+            >
+          </a>
         </div>
         <div class="conten">
-             <a href="#">
-                <img src="img/book.png" class="icon" alt="">
-                <p class="item">350</p>
-                <span class="description3">Total Soal</span>
-            </a>
+          <a href="#">
+            <img src="img/book.png" class="icon" alt="" />
+            <p class="item">350</p>
+            <span class="description3">Total Soal</span>
+          </a>
         </div>
       </div>
       <div class="container-chart">
         <div class="col-md-9">
-                  <div class="card">
-                    <p class="text-center">
-                      <strong>Statik Pendaftaran</strong>
-                    </p>
-                    <div class="chart">
-                      <!-- Sales Chart Canvas -->
-                      <canvas
-                        id="salesChart"
-                        height="180"
-                        style="height: 180px"
-                        width="700px"
-                      ></canvas>
-                    </div>
-                  </div>
-                </div>
+          <div class="card">
+            <p class="text-center">
+              <strong>Statik Pendaftaran</strong>
+            </p>
+            <div class="chart">
+              <!-- Sales Chart Canvas -->
+              <canvas
+                id="salesChart"
+                height="180"
+                style="height: 180px"
+                width="700px"
+              ></canvas>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="content-download">
         <div class="header">
@@ -140,25 +143,25 @@
         </div>
         <div class="list-item">
           <a href="#">
-            <img src="img/iconn.png" alt="" class="i">
+            <img src="img/iconn.png" alt="" class="i" />
             <div class="description">Data Camaba</div>
           </a>
         </div>
         <div class="list-item1">
           <a href="#">
-            <img src="img/iconn.png" alt="" class="ic">
+            <img src="img/iconn.png" alt="" class="ic" />
             <div class="description">Data Keuangan</div>
           </a>
         </div>
-            <div class="list-item2">
+        <div class="list-item2">
           <a href="#">
-            <img src="img/iconn.png" alt="" class="i2">
+            <img src="img/iconn.png" alt="" class="i2" />
             <div class="description">Hasil Ujian</div>
           </a>
         </div>
-         <div class="list-item3">
+        <div class="list-item3">
           <a href="#">
-            <img src="img/iconn.png" alt="" class="i3">
+            <img src="img/iconn.png" alt="" class="i3" />
             <div class="description">Bank Soal</div>
           </a>
         </div>
@@ -166,61 +169,59 @@
       <div class="container-table">
         <div class="table_camaba">
           <span class="header_table">Data Camaba</span>
-          <select id="dropdown" class="set-filter" oninput="filterTable()" >
-          <option>Teknology Informasi</option>
-          <option>Teknology Komputer</option>
-          <option>Teknology Industri</option>
-          <option>Fisika</option>
-          <option>Administrasi Perkantoran</option>
-          <option>Akuntansi</option>
-          <option>Kriya Batik</option>
-        </select>
-      <div class="outer-wrapper">
-        <a href="Data_Camaba.html">
-          
-      <div class="table-wrapper"> 
-        <table id="myTable">
-          <thead>
-            <th>No</th>
-            <th>NISN</th>
-            <th>Nama</th>
-            <th>Status</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>21738</td>
-              <td>Kumzaeni Tri Budi Mulyono</td>
-              <td>Dibayar</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>367292</td>
-              <td>Muhammad Dimsik</td>
-              <td>Belum Dibayar</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>87483</td>
-              <td>Muhammad Rizki Maulana</td>
-              <td>Dibayar</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>S348798</td>
-              <td>Muhammad Arjun Arfani</td>
-              <td>Dibayar</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>42847729</td>
-              <td>Muhammad Musilimin</td>
-              <td>Belum Dibayar</td>
-            </tr>
-        
-          </tbody>
-        </table>
-            </div>
+          <select id="dropdown" class="set-filter" oninput="filterTable()">
+            <option>Teknology Informasi</option>
+            <option>Teknology Komputer</option>
+            <option>Teknology Industri</option>
+            <option>Fisika</option>
+            <option>Administrasi Perkantoran</option>
+            <option>Akuntansi</option>
+            <option>Kriya Batik</option>
+          </select>
+          <div class="outer-wrapper">
+            <a href="Data_Camaba.html">
+              <div class="table-wrapper">
+                <table id="myTable">
+                  <thead>
+                    <th>No</th>
+                    <th>NISN</th>
+                    <th>Nama</th>
+                    <th>Status</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>21738</td>
+                      <td>Kumzaeni Tri Budi Mulyono</td>
+                      <td>Dibayar</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>367292</td>
+                      <td>Muhammad Dimsik</td>
+                      <td>Belum Dibayar</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>87483</td>
+                      <td>Muhammad Rizki Maulana</td>
+                      <td>Dibayar</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>S348798</td>
+                      <td>Muhammad Arjun Arfani</td>
+                      <td>Dibayar</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>42847729</td>
+                      <td>Muhammad Musilimin</td>
+                      <td>Belum Dibayar</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </a>
           </div>
         </div>
@@ -228,55 +229,53 @@
       <div class="container-keuangan-data">
         <div class="table-info-keuangan">
           <span class="header_table">Data Keuangan</span>
-          
+
           <div class="outer-wrapper">
-      <div class="table-wrapper"> 
-        <table id="myTable">
-          <thead>
-            <th>No</th>
-            <th>NISN</th>
-            <th>Nama</th>
-            <th>Status</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>21738</td>
-              <td>Kumzaeni Tri Budi Mulyono</td>
-              <td>Dibayar</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>367292</td>
-              <td>Muhammad Dimsik</td>
-              <td>Belum Dibayar</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>87483</td>
-              <td>Muhammad Rizki Maulana</td>
-              <td>Dibayar</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>S348798</td>
-              <td>Muhammad Arjun Arfani</td>
-              <td>Dibayar</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>42847729</td>
-              <td>Muhammad Musilimin</td>
-              <td>Belum Dibayar</td>
-            </tr>
-           
-          </tbody>
-        </table>
+            <div class="table-wrapper">
+              <table id="myTable">
+                <thead>
+                  <th>No</th>
+                  <th>NISN</th>
+                  <th>Nama</th>
+                  <th>Status</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>21738</td>
+                    <td>Kumzaeni Tri Budi Mulyono</td>
+                    <td>Dibayar</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>367292</td>
+                    <td>Muhammad Dimsik</td>
+                    <td>Belum Dibayar</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>87483</td>
+                    <td>Muhammad Rizki Maulana</td>
+                    <td>Dibayar</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>S348798</td>
+                    <td>Muhammad Arjun Arfani</td>
+                    <td>Dibayar</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>42847729</td>
+                    <td>Muhammad Musilimin</td>
+                    <td>Belum Dibayar</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
-        
       </div>
- 
+    </div>
   </body>
 </html>

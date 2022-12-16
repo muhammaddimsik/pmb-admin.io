@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="ceach-control" content="no-ceach" . />
+    <meta http-equiv="expires" content="0" . />
+    <meta http-equiv="pragma" content="no-ceach" />
+
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/sty.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/tablemain.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/modal.js"></script>
+  </head>
+  <body>
+    <div class="sidebar-nav">
+      <div class="header">
+        <div class="list-item">
+          <a href="Dashboard.html">
+            <img src="img/logo.png" alt="" class="icon" />
+            <span class="description-header">Admin PMB ITS NU Pekalongan</span>
+          </a>
+        </div>
+      </div>
+      <div class="sidebar-main">
+        <div class="list-item">
+          <a href="Dashboard.html">
+            <img src="img/das.png" alt="" class="icon" />
+            <span class="description">Dashboard</span>
+          </a>
+        </div>
+        <div class="list-item" id="Data-camaba">
+          <a href="Data_Camaba.html">
+            <img src="img/pople.png" alt="" class="icon" />
+            <span class="description">Data Camaba</span>
+          </a>
+        </div>
+        <div class="list-item">
+          <a href="Ujian_Onine.html">
+            <img src="img/book.png" alt="" class="icon" />
+            <span class="description">Ujian Online</span>
+          </a>
+        </div>
+        <div class="list-item">
+          <a href="Pemeringkatan.html">
+            <img src="img/ujuan.png" alt="" class="icon" />
+            <span class="description">Pemeringkatan</span>
+          </a>
+        </div>
+        <div class="list-item">
+          <a href="Laporan.html">
+            <img src="img/down.png" alt="" class="icon" />
+            <span class="description">Laporan</span>
+          </a>
+        </div>
+        <div class="list-item">
+          <a href="#">
+            <img src="img/exit.png" alt="" class="icon" />
+            <span class="description">Keluar</span>
+          </a>
+        </div>
+      </div>
+      </div>
+      <div class="line-top">
+        <div class="list-item">
+          <img src="img/search.png" class="icon" alt="" />
+          <input type="search" class="filter" />
+          <button class="icon2" type="button">
+            <img src="img/alert.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header">
+          <div class="item">
+            <span class="description-item">Data Camaba</span>
+            <span class="item-header">768</span>
+            <a href="#"><button class="export">Export</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<div class="select-main">
+   <select id="drop" oninput="filterTable()">
+          <option>Teknology Informasi</option>
+          <option>Teknology Komputer</option>
+          <option>Teknology Industri</option>
+          <option>Fisika</option>
+          <option>Administrasi Perkantoran</option>
+          <option>Akuntansi</option>
+          <option>Kriya Batik</option>
+        </select>
+        <span class="label">Filter By</span>
+</div>
+    <div class="tabled">        
+      <table id="example" class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>NISN</th>
+            <th>Nama</th>
+            <th>Pilihan Prodi</th>
+            <th>Status</th>
+            <th>Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>21738</td>
+            <td>Kumzaeni Tri Budi Mulyono</td>
+            <td>Teknology Informasi</td>
+            <td>Dibayar</td>
+            <td><a href="#" id="linkModal">Detaile</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>367292</td>
+            <td>Muhammad Dimsik</td>
+            <td>Teknology Informasi</td>
+            <td>Belum Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>87483</td>
+            <td>Muhammad Rizki Maulana</td>
+            <td>Teknology Informasi</td>
+            <td>Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>S348798</td>
+            <td>Muhammad Arjun Arfani</td>
+            <td>Teknology Informas</td>
+            <td>Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>42847729</td>
+            <td>Muhammad Musilimin</td>
+            <td>Teknology Informasi</td>
+            <td>Belum Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>J484289</td>
+            <td>Hari Safira</td>
+            <td>Administrasi Perkantoran</td>
+            <td>Belum Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>87487873</td>
+            <td>Muhammad Viki</td>
+            <td>Akuntansi</td>
+            <td>Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>348972</td>
+            <td>Junaidi</td>
+            <td>Fisika</td>
+            <td>Belum Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>348934</td>
+            <td>Yahya Abdilah</td>
+            <td>Teknology Komputer</td>
+            <td>Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>48493</td>
+            <td>Djarout Nur Rohim</td>
+            <td>Teknology Industri</td>
+            <td>Belum Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>128783</td>
+            <td>Haniyatul Hasanah</td>
+            <td>Kriya Batik</td>
+            <td>Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>767577</td>
+            <td>Rohim</td>
+            <td>Teknology Informasi</td>
+            <td>Belum Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>4678248</td>
+            <td>Lailatus Saadah</td>
+            <td>Teknology Komputer</td>
+            <td>Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>237184</td>
+            <td>Adinulana</td>
+            <td>Teknology Komputer</td>
+            <td>Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>4927992</td>
+            <td>Ahmad Handoyo</td>
+            <td>Fisika</td>
+            <td>Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>24872478</td>
+            <td>Rokibun</td>
+            <td>Teknology Industri</td>
+            <td>Belum Dibayar</td>
+            <td><a href="#">Detail</a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+     <div id="modal" class="offmodal">
+      <div class="modal-container">
+        <header>
+          <h2>Detail Data Camaba</h2>
+          <span class="close">
+            <a href="#">X</a>
+          </span>
+        </header>
+        <div class="modal-body">
+          <div class="biodata">
+            <span class="header">Biodata camaba</span>
+            <ul>
+              <li>
+                <table width="560px" class="table-modal">
+                  <tr>
+                    <th width="150px"></th>
+                    <th width="1px"></th>
+                    <th width="200px"></th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>Nomor Induk Siswa Nasional (NISN)</td>
+                      <td>:</td>
+                      <td>2724972749224</td>
+                    </tr>
+                    <tr>
+                      <td>Nama Lengkap</td>
+                      <td>:</td>
+                      <td>Kumzaeni Tri Budi Mulyono</td>
+                    </tr>
+                    <tr>
+                      <td>Nomor Induk Kependudukan</td>
+                      <td>:</td>
+                      <td>3329823238839289249</td>
+                    </tr>
+                    <tr>
+                      <td>Asal Sekolah</td>
+                      <td>:</td>
+                      <td>SMK Negri 1 Lebakbarang</td>
+                    </tr>
+                    <tr>
+                      <td>Tahun Lulus</td>
+                      <td>:</td>
+                      <td>2019</td>
+                    </tr>
+                    <tr>
+                      <td>Tempat Lahir</td>
+                      <td>:</td>
+                      <td>Pekalongan</td>
+                    </tr>
+                    <tr>
+                      <td>Tanggal Lahir</td>
+                      <td>:</td>
+                      <td>29 Juli 2001</td>
+                    </tr>
+                    <tr>
+                      <td>Jenis Kelamin</td>
+                      <td>:</td>
+                      <td>Laki-Laki</td>
+                    </tr>
+                    <tr>
+                      <td>Agama</td>
+                      <td>:</td>
+                      <td>Islam</td>
+                    </tr>
+                    <tr>
+                      <td>Alamat</td>
+                      <td>:</td>
+                      <td>Desa Bantarkulon Rt 02/Rw 01</td>
+                    </tr>
+                    <tr>
+                      <td>Provinsi</td>
+                      <td>:</td>
+                      <td>Jawa Tengah</td>
+                    </tr>
+                    <tr>
+                      <td>Kabupaten</td>
+                      <td>:</td>
+                      <td>Pekalongan</td>
+                    </tr>
+                    <tr>
+                      <td>Kecamatan</td>
+                      <td>:</td>
+                      <td>Lebakbarang</td>
+                    </tr>
+                    <tr>
+                      <td>Desa</td>
+                      <td>:</td>
+                      <td>Bantarkulon</td>
+                    </tr>
+                    <tr>
+                      <td>Kode Pose</td>
+                      <td>:</td>
+                      <td>51183</td>
+                    </tr>
+                    <tr>
+                      <td>Email</td>
+                      <td>:</td>
+                      <td>budi48737@gmail.com</td>
+                    </tr>
+                    <tr>
+                      <td>No. Handphone</td>
+                      <td>:</td>
+                      <td>085325382029</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+          </div>
+          <br><br>
+          <div class="biodata">
+            <span class="header">Keluarga</span>
+            <ul>
+              <li>
+                <table width="560px" class="table-modal">
+                  <tr>
+                    <th width="150px"></th>
+                    <th width="2px"></th>
+                    <th width="200px"></th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>Nomor Kartu Keluarga (No. KK)</td>
+                      <td>:</td>
+                      <td>2724972749224</td>
+                    </tr>
+                    <tr>
+                      <td>NIK Kepala Keluarga</td>
+                      <td>:</td>
+                      <td>323283282890890283</td>
+                    </tr>
+                    <tr>
+                      <td>Nama Ayah</td>
+                      <td>:</td>
+                      <td>Daniel</td>
+                    </tr>
+                    <tr>
+                      <td>Pekerjaan Ayah</td>
+                      <td>:</td>
+                      <td>buruh Tani</td>
+                    </tr>
+                    <tr>
+                      <td>Penghasilan Ayah</td>
+                      <td>:</td>
+                      <td>3.000.000</td>
+                    </tr>
+                    <tr>
+                      <td>Nama Ibu</td>
+                      <td>:</td>
+                      <td>Nabila Salsabila</td>
+                    </tr>
+                    <tr>
+                      <td>Pekerjaan Ibu</td>
+                      <td>:</td>
+                      <td>Ibu Rumah Tangga</td>
+                    </tr>
+                    <tr>
+                      <td>Penghasilan Ibu</td>
+                      <td>:</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Penerima Kartu Program Sejahtera</td>
+                      <td>:</td>
+                      <td>Ya</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+          </div>
+          <br><br>
+          <div class="biodata">
+            <span class="header">Pilihan Prodi</span>
+            <ul>
+              <li>
+                <table width="560px" class="table-modal">
+                  <tr>
+                    <th width="150px"></th>
+                    <th width="2px"></th>
+                    <th width="200px"></th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>Pilihan Program studi(1)</td>
+                      <td>:</td>
+                      <td>Teknologi Infomasi</td>
+                    </tr>
+                    <tr>
+                      <td>Pilihan Program studi(2)</td>
+                      <td>:</td>
+                      <td>Teknologi Industri</td>
+                    </tr>
+                    <tr>
+                      <td>Kelas</td>
+                      <td>:</td>
+                      <td>Reguler</td>
+                    </tr>
+                    <tr>
+                      <td>Jalur Masuk</td>
+                      <td>:</td>
+                      <td>Beasiswa Pemerintah</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+          </div>
+          <div class="biodata">
+            <span class="header">Berkas</span>
+            <div class="berkas">
+              <div class="description">
+                <span class="header_description">Ijazah</span>
+                <div class="image">
+                  <img src="img/person-profil.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="berkas">
+              <div class="description1">
+                <span class="header_description">SKHU/SKL</span>
+                <div class="image">
+                  <img src="img/logo-seller.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="berkas">
+              <div class="description2">
+                <span class="header_description">KTP</span>
+                <div class="image">
+                  <img src="img/eraego.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="berkas">
+              <div class="description3">
+                <span class="header_description">Kartu Keluarga</span>
+                <div class="image">
+                  <img src="img/minuman-1.jpg" alt="" />
+                </div>
+                 <div class="berkas">
+              <div class="description4">
+                <span class="header_description">Pas Photo</span>
+                <div class="image">
+                  <img src="img/pribadi_blob.jpeg" alt="" />
+                </div>
+                 <div class="berkas">
+              <div class="description5">
+                <span class="header_description">SKTM</span>
+                <div class="image">
+                  <img src="img/basic-shirt-black.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#example").DataTable({
+          order: [[3, "desc"]],
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="ceach-control" content="no-ceach" . />
+    <meta http-equiv="expires" content="0" . />
+    <meta http-equiv="pragma" content="no-ceach" />
+
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/sty.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/tablemain.js"></script>
+    <script src="js/filter.js"></script>
+  </head>
+  <body>
+    <div class="sidebar-nav">
+      <div class="header">
+        <div class="list-item">
+          <a href="Dashboard.html">
+            <img src="img/logo.png" alt="" class="icon" />
+            <span class="description-header">Admin PMB ITS NU Pekalongan</span>
+          </a>
+        </div>
+      </div>
+      <div class="sidebar-main">
+        <div class="list-item">
+          <a href="Dashboard.html">
+            <img src="img/das.png" alt="" class="icon" />
+            <span class="description">Dashboard</span>
+          </a>
+        </div>
+        <div class="list-item">
+          <a href="Data_Camaba.html">
+            <img src="img/pople.png" alt="" class="icon" />
+            <span class="description">Data Camaba</span>
+          </a>
+        </div>
+        <div class="list-item" id="ujian">
+          <a href="Ujian_Onine.html">
+            <img src="img/book.png" alt="" class="icon" />
+            <span class="description">Daftar Soal</span>
+          </a>
+        </div>
+        <div class="list-item">
+          <a href="Pemeringkatan.html">
+            <img src="img/ujuan.png" alt="" class="icon" />
+            <span class="description">Pemeringkatan</span>
+          </a>
+        </div>
+        <div class="list-item">
+          <a href="Laporan.html">
+            <img src="img/down.png" alt="" class="icon" />
+            <span class="description">Laporan</span>
+          </a>
+        </div>
+        <div class="list-item">
+          <a href="#">
+            <img src="img/exit.png" alt="" class="icon" />
+            <span class="description">Keluar</span>
+          </a>
+        </div>
+      </div>
+      </div>
+      <div class="line-top">
+        <div class="list-item">
+          <img src="img/search.png" class="icon" alt="" />
+          <input type="search" class="filter" />
+          <button class="icon2" type="button">
+            <img src="img/alert.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header">
+          <div class="item">
+            <span class="description-item">Dftar Soal</span>
+            <span class="item-header">100</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="select-main">
+   <select id="drop" oninput="filterTable()">
+          <option>Teknology Informasi</option>
+          <option>Teknology Komputer</option>
+          <option>Teknology Industri</option>
+          <option>Fisika</option>
+          <option>Administrasi Perkantoran</option>
+          <option>Akuntansi</option>
+          <option>Kriya Batik</option>
+        </select>
+        <span class="label">Filter By</span>
+</div>
+
+ 
+    <div class="tabled">        
+      <table id="example" class="table-ujian-main">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Soal</th>
+            <th>Jawaban Benar</th>
+            <th>Kategori</th>
+            <th colspan="">edit</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat doloribus ipsa consequatur dolorem ratione repellendus, veniam quaerat non odit quisquam omnis animi quasi. Placeat, alias libero ex non minus atque.</td>
+            <td>Kumzaeni Tri Budi Mulyono</td>
+            <td>Teknology Informasi</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+           
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>367292</td>
+            <td>Muhammad Dimsik</td>
+            <td>Teknology Informasi</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>87483</td>
+            <td>Muhammad Rizki Maulana</td>
+            <td>Teknology Informasi</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+          
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>S348798</td>
+            <td>Muhammad Arjun Arfani</td>
+            <td>Teknology Informas</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+           
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>42847729</td>
+            <td>Muhammad Musilimin</td>
+            <td>Teknology Informasi</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+          
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>J484289</td>
+            <td>Hari Safira</td>
+            <td>Administrasi Perkantoran</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+     
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>87487873</td>
+            <td>Muhammad Viki</td>
+            <td>Akuntansi</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+           
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>348972</td>
+            <td>Junaidi</td>
+            <td>Fisika</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+            
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>348934</td>
+            <td>Yahya Abdilah</td>
+            <td>Teknology Komputer</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+           
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>48493</td>
+            <td>Djarout Nur Rohim</td>
+            <td>Teknology Industri</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+            
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>128783</td>
+            <td>Haniyatul Hasanah</td>
+            <td>Kriya Batik</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+           
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>767577</td>
+            <td>Rohim</td>
+            <td>Teknology Informasi</td>
+           <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+          
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>4678248</td>
+            <td>Lailatus Saadah</td>
+            <td>Teknology Komputer</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+           
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>237184</td>
+            <td>Adinulana</td>
+            <td>Teknology Komputer</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+           
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>4927992</td>
+            <td>Ahmad Handoyo</td>
+            <td>Fisika</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+          
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>24872478</td>
+            <td>Rokibun</td>
+            <td>Teknology Industri</td>
+            <td><a href="#"><img src="img/sampah.png" alt="" class="btn-edit"></a><a href="#"><img src="img/pen.png" alt="" class="btn-edit"></a></td>
+           
+          </tr>
+        </tbody>
+        <tfoot id="example_length">
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+     <div class="main_import_export">
+      <div class="import">
+        <button>
+          <a href=""><span class="description">Import</span></a>
+        </button>
+      </div>
+      <div class="export">
+        <button>
+          <a href=""><span class="description">Export</span></a>
+        </button>
+      </div>
+      <div class="add">
+        <button>
+          <a href="daftar_soal.html"><span class="description1">+ Tambah</span></a>
+        </button>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#example").DataTable({
+          order: [[3, "desc"]],
+        });
+      });
+    </script>
+  </body>
+</html>

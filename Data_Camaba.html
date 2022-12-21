@@ -20,84 +20,68 @@
     <div class="sidebar-nav">
       <div class="header">
         <div class="list-item">
-          <a href="Dashboard.html">
+          <a href="index.html" class="flex">
             <img src="img/logo.png" alt="" class="icon" />
-            <span class="description-header">Admin PMB ITS NU Pekalongan</span>
+            <h3 class="description-header">
+              Admin PMB <span> ITSNU Pekalongan</span>
+            </h3>
           </a>
         </div>
       </div>
       <div class="sidebar-main">
         <div class="list-item">
-          <a href="Dashboard.html">
+          <a href="index.html" class="flex">
             <img src="img/das.png" alt="" class="icon" />
-            <span class="description">Dashboard</span>
+            <p class="description">Dashboard</p>
           </a>
         </div>
         <div class="list-item" id="Data-camaba">
-          <a href="Data_Camaba.html">
+          <a href="Data_Camaba.html" class="flex">
             <img src="img/pople.png" alt="" class="icon" />
-            <span class="description">Data Camaba</span>
+            <p class="description">Data Camaba</p>
           </a>
+          <div class="rectangle"></div>
         </div>
         <div class="list-item">
-          <a href="Ujian_Onine.html">
+          <a href="Ujian_Onine.html" class="flex">
             <img src="img/book.png" alt="" class="icon" />
-            <span class="description">Ujian Online</span>
+            <p class="description">Ujian Online</p>
           </a>
         </div>
         <div class="list-item">
-          <a href="Pemeringkatan.html">
+          <a href="Pemeringkatan.html" class="flex">
             <img src="img/ujuan.png" alt="" class="icon" />
-            <span class="description">Pemeringkatan</span>
+            <p class="description">Pemeringkatan</p>
           </a>
         </div>
         <div class="list-item">
-          <a href="Laporan.html">
+          <a href="Laporan.html" class="flex">
             <img src="img/down.png" alt="" class="icon" />
-            <span class="description">Laporan</span>
+            <p class="description">Laporan</p>
           </a>
         </div>
         <div class="list-item">
-          <a href="#">
+          <a href="#" class="flex">
             <img src="img/exit.png" alt="" class="icon" />
-            <span class="description">Keluar</span>
+            <p class="description">Keluar</p>
           </a>
-        </div>
-      </div>
-      </div>
-      <div class="line-top">
-        <div class="list-item">
-          <img src="img/search.png" class="icon" alt="" />
-          <input type="search" class="filter" />
-          <button class="icon2" type="button">
-            <img src="img/alert.png" alt="" />
-          </button>
-        </div>
-      </div>
-      <div class="container">
-        <div class="header">
-          <div class="item">
-            <span class="description-item">Data Camaba</span>
-            <span class="item-header">768</span>
-            <a href="#"><button class="export">Export</button></a>
-          </div>
         </div>
       </div>
     </div>
-    
-<div class="select-main">
-   <select id="drop" oninput="filterTable()">
-          <option>Teknology Informasi</option>
-          <option>Teknology Komputer</option>
-          <option>Teknology Industri</option>
-          <option>Fisika</option>
-          <option>Administrasi Perkantoran</option>
-          <option>Akuntansi</option>
-          <option>Kriya Batik</option>
-        </select>
-        <span class="label">Filter By</span>
-</div>
-    <div class="tabled">        
+
+    <div class="select-main">
+      <select id="drop" oninput="filterTable()">
+        <option>Teknology Informasi</option>
+        <option>Teknology Komputer</option>
+        <option>Teknology Industri</option>
+        <option>Fisika</option>
+        <option>Administrasi Perkantoran</option>
+        <option>Akuntansi</option>
+        <option>Kriya Batik</option>
+      </select>
+      <span class="label">Filter By</span>
+    </div>
+    <div class="tabled">
       <table id="example" class="table table-striped table-bordered">
         <thead>
           <tr>
@@ -258,7 +242,7 @@
         </tfoot>
       </table>
     </div>
-     <div id="modal" class="offmodal">
+    <div id="modal" class="offmodal">
       <div class="modal-container">
         <header>
           <h2>Detail Data Camaba</h2>
@@ -368,7 +352,7 @@
               </li>
             </ul>
           </div>
-          <br><br>
+          <br /><br />
           <div class="biodata">
             <span class="header">Keluarga</span>
             <ul>
@@ -430,7 +414,7 @@
               </li>
             </ul>
           </div>
-          <br><br>
+          <br /><br />
           <div class="biodata">
             <span class="header">Pilihan Prodi</span>
             <ul>
@@ -499,17 +483,21 @@
                 <div class="image">
                   <img src="img/minuman-1.jpg" alt="" />
                 </div>
-                 <div class="berkas">
-              <div class="description4">
-                <span class="header_description">Pas Photo</span>
-                <div class="image">
-                  <img src="img/pribadi_blob.jpeg" alt="" />
-                </div>
-                 <div class="berkas">
-              <div class="description5">
-                <span class="header_description">SKTM</span>
-                <div class="image">
-                  <img src="img/basic-shirt-black.jpg" alt="" />
+                <div class="berkas">
+                  <div class="description4">
+                    <span class="header_description">Pas Photo</span>
+                    <div class="image">
+                      <img src="img/pribadi_blob.jpeg" alt="" />
+                    </div>
+                    <div class="berkas">
+                      <div class="description5">
+                        <span class="header_description">SKTM</span>
+                        <div class="image">
+                          <img src="img/basic-shirt-black.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
